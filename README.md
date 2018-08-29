@@ -1,4 +1,4 @@
-# FCC-BorderCollie_tribute
+# FCC-The Office tribute
 First project for  Free Code Camp's Responsive Web Design Projects
 # The requirements set forth 
 
