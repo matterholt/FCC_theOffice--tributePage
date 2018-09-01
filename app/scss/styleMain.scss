@@ -1,6 +1,47 @@
+$mainColor_primary : #dfe7ff;
+
+
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', serif;
+    margin: 0rem;
 }
-#main{
-    
+
+
+.head{
+    display: flex;
+
+    h1{
+        font-family: 'Special Elite', cursive, Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+    }
+    &__bannerBox{
+        position: relative;
+        overflow: hidden;
+        height: 150px;
+        width: 150px;
+    }
+    &__banner{
+        position: absolute;
+        background-color: #030363;
+        color: #fff;
+        bottom: 50px;
+        left: 15px;
+        text-align: center;
+        padding: 70px 80px 0px 80px ;
+        transform: rotate(45deg);
+
+    }
+
+}
+
+.main{
+    background-color: $mainColor_primary;
+}
+.main__season{
+    background-color: #a6c3fd;
+
+    li {
+        padding-right: 1rem;
+    }
 }
