@@ -1,7 +1,6 @@
 $mainColor_primary : #dfe7ff;
 
 
-
 body{
     font-family: 'Merriweather', serif;
     margin: 0rem;
@@ -42,6 +41,23 @@ body{
 
 }
 
-.main{
+#main{
     background-color: $mainColor_primary;
+}
+.content{
+    &__background{
+        border: 2px solid orange;
+        &--titleCenter{
+            text-align:center;
+        }
+    }
+    &__castList{
+        border: 2px solid orchid;
+    }
+    &__season{
+        border: 2px solid rebeccapurple;
+    }
+    &__products{
+        border: 2px solid royalblue;
+    }
 }
