@@ -10,6 +10,28 @@ body{
     padding: 0.5rem;
 }
 
+#title{
+
+}
+#main{
+    background-color: $mainColor_primary;
+}
+#img-div{
+
+}
+#img-caption{
+
+}
+#tribute-info{
+
+}
+#tribute-link{
+
+}
+img{
+    
+}
+
 
 .head{
     display: flex;
@@ -41,9 +63,6 @@ body{
 
 }
 
-#main{
-    background-color: $mainColor_primary;
-}
 .content{
     &__background{
         border: 2px solid orange;
