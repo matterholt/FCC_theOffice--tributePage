@@ -3,18 +3,15 @@ $mainColor_primary : #dfe7ff;
 
 body{
     font-family: 'Merriweather', serif;
-    margin: 0rem;
-    margin: auto;
-    padding: 0.5rem;
 }
 
 #title{
-    background: linear-gradient( left, white, $mainColor_primary);
+
 }
 #main{
     display: grid;
     grid-template-columns: 15% repeat(3, 1fr) 15%;
-    grid-auto-rows: minmax(125px, auto);
+    grid-auto-flow: row;
     grid-gap: .5rem;
 }
 #img-div{
@@ -29,9 +26,28 @@ body{
 #tribute-link{
 
 }
-.card{
-    grid-column: 2/ span 3;
-    list-style: none;
+.triInfo{
+    
+}
+
+.triInfo--card{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $mainColor_primary;
-    padding: 2em;   
+    box-shadow: .2em .3em .5em black;
+    padding-left: 2%;
+    padding-right: 2%;
+    ul{
+        list-style: none;
+        
+        li{
+            padding: 0.5em;
+        }
+    }
+    h3{
+        font-size: 2em;
+    }
 }
