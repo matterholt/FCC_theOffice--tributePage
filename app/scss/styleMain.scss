@@ -9,10 +9,13 @@ body{
 }
 
 #title{
-
+    background: linear-gradient( left, white, $mainColor_primary);
 }
 #main{
-    background-color: $mainColor_primary;
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: .5rem;
 }
 #img-div{
 
@@ -25,4 +28,10 @@ body{
 }
 #tribute-link{
 
+}
+.card{
+    grid-column: 2/ span 3;
+    list-style: none;
+    background-color: $mainColor_primary;
+    padding: 2em;   
 }
