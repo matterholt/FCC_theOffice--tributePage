@@ -2,12 +2,51 @@ $mainColor_primary : #dfe7ff;
 
 
 body{
+    margin: 0;
     font-family: 'Merriweather', serif;
+    background: #333;
+    color: rgb(233, 73, 135);
+    font-size: 1.1em;
+    line-height: 1.5em; 
+    text-align: center;
+}
+
+.nav__seasonJump{
+    ul{
+        display: flex;      
+        flex-wrap:wrap;
+        list-style: none;
+        text-align: center;
+        li{
+            padding: .8em;
+            border-radius: 50%;
+            transform: rotate(-32deg);
+            a {
+                color: white;
+            }
+        }
+        li:hover{
+            background:#8a8a8a;
+            a{
+                color: #000;
+
+            }
+        }
+    }
 }
 
 #title{
+    font-size: 2em;
+    line-height: 2em;       
+}
+.title__quote{
+    font-size: .4em;
+    width:150px;
+    line-height: 
+    transform: rotate(350deg)
 
 }
+
 #main{
     display: grid;
     grid-template-columns: 15% repeat(3, 1fr) 15%;
@@ -15,7 +54,8 @@ body{
     grid-gap: .5rem;
 }
 #img-div{
-
+    width: 100%;
+    height: auto;
 }
 #img-caption{
 
@@ -27,26 +67,20 @@ body{
 
 }
 .triInfo{
-    
+
+}
+btn{
+    display: inline-block;
+    text-decoration: none;
+
 }
 
 .triInfo--card{
     grid-column-start: 2;
     grid-column-end: 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $mainColor_primary;
     box-shadow: .2em .3em .5em black;
-    padding-left: 2%;
-    padding-right: 2%;
-    ul{
-        list-style: none;
-        
-        li{
-            padding: 0.5em;
-        }
-    }
+
     h3{
         font-size: 2em;
     }
